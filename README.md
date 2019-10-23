@@ -3,6 +3,11 @@
 A simple flask decorator that helps specify which args are required from the user. It returns a 400 error if any are missing.
 You specify the arguments required in your function definition, you can use default parameters like normal.
 
+
+## Installation
+
+`pip install flask_required_args`
+
 ## Example Usage
 
 1. Simple usage
