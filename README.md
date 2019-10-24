@@ -10,7 +10,7 @@ You specify the arguments required in your function definition, you can use defa
 
 ## Example Usage
 
-1. Simple usage
+Simple usage
 ```python
 from flask_required_args import required_data
 
@@ -20,7 +20,7 @@ def hello_world(name):
     return f'Hello {name}'
 ```
 
-2. You can use default parameters as normal
+You can use default parameters as normal
 ```python
 from flask_required_args import required_data
 
@@ -28,5 +28,15 @@ from flask_required_args import required_data
 @required_data
 def hello_world(name="World"):
     return f'Hello {name}'
+```
+
+You can use url parameters as normal
+```python
+from flask_required_args import required_data
+
+@app.route('/<user_name>', methods=['POST'])
+@required_data
+def hello_world(greeting, user_name):
+    return f'{greeting} {user_name}'
 ```
 
