@@ -10,7 +10,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="flask_required_args",
-    version='0.1.2',
+    version='1.0.0',
     packages=setuptools.find_packages(),
     install_requires=install_requires,
     extras_require={
